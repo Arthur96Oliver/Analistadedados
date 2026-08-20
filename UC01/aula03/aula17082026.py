@@ -56,8 +56,11 @@
 # elif media > 7:
 #     print("Aprovado")
 
-"""git (versionamento)"""
+# git (Clonagem)
+# git + init
 
-# git + add = 
-# git + cunnit - m "texto"=
-# git + push ou git push-u originmain=
+"""git (versionamento) o processo parece ser de esteira"""
+
+# git + add = adiconar o arquivo (colocar na esteira)
+# git + commit -m "texto"= (fazer a esteira andar)
+# git + push ou git push-uoriginmain= fazer passar pela porta e ir para plataforma
