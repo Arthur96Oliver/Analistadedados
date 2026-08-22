@@ -4,6 +4,9 @@
 #git push-u = Atualizar a maquina para o diretorio (site)
 #git pull = Atualizar o diretorio (site) para maquina
 
+#Passo a passo para salvar git: 1) git add . 2) git commit -m "texto" 3)git push
+
+
 #Exericio (If/Elif/Else)
 
 # nome = input("Informe seu nome: ")
@@ -128,11 +131,16 @@
 # litro = int(input("Consumo de litro gasto: "))
 # v_recebido = float(input("Valor recebido no final do dia: "))
 
-# odometro_r = odometro_f - odometro_i
-# litro_g = odometro_r/litro
-# valor_gasto = COMBUSTIVEL*litro_g
-
-
+# if odometro_i >= odometro_f:
+#     print("Valor do odometro maior ou igual a odomentro final")
+# elif litro == 0:
+#     print("Valor do consumo de litro invalido, valor tem que ser maior que 0")
+# else:
+#     odometro_r = odometro_f - odometro_i
+#     litro_g = odometro_r/litro
+#     valor_gasto = COMBUSTIVEL*litro_g
+#     Lucro_liquido = valor_gasto - v_recebido
+#     print(f"A media de cosumo foi {litro_g:.2f} e o lucro do dia foi {Lucro_liquido:.2f}")
 
 
 # 4. Código de Origem do Produto:
@@ -154,6 +162,27 @@
 
 # Observação: nota optativa - o estudante decide fazer uma prova extra para melhorar o resultado final.
 
+nota_n_1 = float(input("Digite a primeira nota da avaliação normal: "))
+nota_n_2 = float(input("Digite a segunda nota da avaliação normal:"))
+f_prova_op = (input("Fez a prova optativa (sim/nao): "))
+media = (nota_n_1 + nota_n_2)/2
+if f_prova_op == "sim":
+    nota_op = float(input("informe a nota da prova optativa: "))
+elif f_prova_op == "nao":
+    nota_op = -1
+
+if nota_n_1 < nota_op:
+    media = (nota_n_2 + nota_op)/2
+elif nota_n_2 < nota_op:
+    media = (nota_n_1 + nota_op)/2
+
+
+if media >= 6.0:
+    print("Aprovado")
+elif media > 3:
+    print ("Recupercao")
+else:
+    print("Reprovado")
 
 # 6. Positivo ou Negativo:
 # Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o
