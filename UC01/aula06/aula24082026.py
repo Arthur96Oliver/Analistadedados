@@ -58,5 +58,3 @@ produto = {
 }
 
 print(produto,(type(produto)))
-
-produto[]

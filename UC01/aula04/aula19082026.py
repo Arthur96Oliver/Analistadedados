@@ -147,6 +147,31 @@
 
 # Escreva um programa que leia o código de origem de um produto e imprima na tela a região de sua procedência, conforme a tabela abaixo:
 
+# C_produto = float(input("Inserir o código do produto:"))
+
+# match C_produto:
+#     case 1:
+#         print("Seu produto é procêdencia: Sul")
+#     case 2:
+#         print("Seu produto é procêdencia: Norte")
+#     case 3:
+#         print("Seu produto é procêdencia: Leste")
+#     case 4:
+#         print("Seu produto é procêdencia: Oeste")
+#     case 5 | 6:
+#         print("Seu produto é procêdencia: Nordeste")
+#     case 7 | 8 | 9:
+#          print("Seu produto é procêdencia: Sudeste")
+#     case 10:
+#          print("Seu produto é procêdencia: Centro-Oeste")
+#     case 11:
+#          print("Seu produto é procêdencia: Noroeste")
+#     case _:
+#          print("Seu produto é procêdencia: Importada")
+        
+
+
+
 
 # Observação: caso o código não seja nenhum dos especificados, o produto deve ser # encarado como “Importado”.
 
@@ -187,3 +212,10 @@ else:
 # 6. Positivo ou Negativo:
 # Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o
 # valor zero como positivo
+
+# numero_1 = float(input("Inserir o valor: "))
+
+# if numero_1 >= 0:
+#     print("O valor escolhido é positivo")
+# else:
+#     print("O valor escolhido é negativo")
